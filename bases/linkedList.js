@@ -6,10 +6,9 @@ function Node(element) {
 // 链表
 function linkedList() {
   this.head = new Node('head');
-
 }
 // 查找节点
-linkedList.prototype.find = function() {
+linkedList.prototype.find = function(item) {
   let currNode = this.head;
   while (currNode.element != item) {
     currNode = currNode.next;
